@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Web Form</title>
-
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <h1>Hello!</h1>
-</body>
+    <!--Css Normalization-->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="graphicscontainer">
+      <div id="logocontainer">
+        <img id="logo" src="./media/svg/car-sport-outline.svg" alt="Car Logo" class="filter-white">
+        <h1 id="mainTitle">LetsRace</h1>
+      </div>
+      <p id="credits">
+        Photo by <a href="https://unsplash.com/@vrchh">Archee Lal</a> on
+        <a href="https://unsplash.com/photos/white-car-AQuzzn6V6gE">Unsplash</a>
+      </p>
+    </div>
+    <div id="formcontainer">
+      <h2>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up now to get
+        started.
+      </h2>
+      <h2>You know you want to</h2>
+      <form action="">
+        <h2>Let's do this!</h2>
+        <label>FIRST NAME</label>
+        <input type="text" />
+        <label>LAST NAME</label>
+        <input type="text" />
+        <label>EMAIL</label>
+        <input type="text" />
+        <label>PHONE NUMBER</label>
+        <input type="text" />
+        <label>PASSWORD</label>
+        <input type="text" />
+        <label>CONFIRM PASSWORD</label>
+        <input type="text" />
+        <button type="submit">Create Account</button>
+      </form>
+      <p>Already have an account? <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU">Log In</a></p>
+    </div>
+  </body>
 </html>
