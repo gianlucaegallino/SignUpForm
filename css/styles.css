@@ -1,9 +1,19 @@
+@font-face {
+  font-family: LemonMilk;
+  src: url(../media/fonts/LEMONMILK-Bold.woff2);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(../media/fonts/Ubuntu-Regular.ttf);
+}
 body {
   display: flex;
   flex-direction: row;
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  font-family: Ubuntu, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 100vh;
+  
 }
 
 h2 {
@@ -14,18 +24,27 @@ h2 {
 #formcontainer #graphicscontainer {
   flex-direction: column;
 }
+#formcontainer
+{
+  width: 62vw;
+  background-color: #161515;
+}
 
 #graphicscontainer {
   color: white;
-  background-image: url(../media/img/archee-lal-AQuzzn6V6gE-unsplash.jpg);
-  background-size: auto 100vh;
+  background-image: url(../media/img/archee-lal-AQuzzn6V6gE-unsplash.webp);
+  background-size: auto 200vh;
   background-repeat: no-repeat;
-  width: auto;
+  background-position: center;
+  width: 38vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.filter-white {
-  filter: invert(100%) sepia(10%) saturate(0%) hue-rotate(184deg)
-    brightness(116%) contrast(100%);
+.filter-red {
+  filter: invert(14%) sepia(96%) saturate(3787%) hue-rotate(355deg) brightness(97%) contrast(98%);
 }
 
 #logocontainer {
@@ -33,10 +52,45 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  width: 38vw;
+  margin-top: 20vh;
+  flex-shrink: 0;
 }
 
 #logo {
-  width: 2rem;
-  height: 2rem;
+  width: 5vw;
+  height: 5vw;
+  margin-right: 1vw;
+}
+#mainTitle {
+  font-size: 5vw;
+  margin: 1rem;
+}
+
+#credits {
+  font-size: 0.7rem;
+}
+
+#topFormText {
+  padding: 4vw;
+  padding-top: 12vh;
+  width: 47vw;
+  font-weight: 600;
+  font-size: 1.65vw;
+  color: rgb(238, 238, 238);
+}
+
+#mainForm {
+  background-color: #313131;
+  color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+#col1, #col2 {
+  display: flex;
+  flex-direction: column;
 }

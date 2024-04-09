@@ -12,7 +12,7 @@
   <body>
     <div id="graphicscontainer">
       <div id="logocontainer">
-        <img id="logo" src="./media/svg/car-sport-outline.svg" alt="Car Logo" class="filter-white">
+        <img id="logo" src="./media/svg/car-sport-outline.svg" alt="Car Logo" class="filter-red">
         <h1 id="mainTitle">LetsRace</h1>
       </div>
       <p id="credits">
@@ -21,28 +21,36 @@
       </p>
     </div>
     <div id="formcontainer">
-      <h2>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up now to get
-        started.
-      </h2>
-      <h2>You know you want to</h2>
-      <form action="">
-        <h2>Let's do this!</h2>
-        <label>FIRST NAME</label>
-        <input type="text" />
-        <label>LAST NAME</label>
-        <input type="text" />
-        <label>EMAIL</label>
-        <input type="text" />
-        <label>PHONE NUMBER</label>
-        <input type="text" />
-        <label>PASSWORD</label>
-        <input type="text" />
-        <label>CONFIRM PASSWORD</label>
-        <input type="text" />
-        <button type="submit">Create Account</button>
-      </form>
+      <div id="topFormText">
+        <p class="formtext">
+          This is not a real online service! You know you need something like this
+          in your life to help you realize your deepest dreams. Sign up <i>now</i> to get
+          started.
+        </p>
+        <p class = "formtext">You <i>know</i> you want to.</p>
+      </div>
+      <div id="mainForm">
+        <form action="">
+          <h2>Let's do this!</h2>
+          <div id="col1">
+            <label>FIRST NAME</label>
+            <input type="text" />
+            <label>LAST NAME</label>
+            <input type="text" />
+            <label>EMAIL</label>
+            <input type="text" />
+          </div>
+          <div id="col2">
+            <label>PHONE NUMBER</label>
+            <input type="text" />
+            <label>PASSWORD</label>
+            <input type="text" />
+            <label>CONFIRM PASSWORD</label>
+            <input type="text" />
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
       <p>Already have an account? <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU">Log In</a></p>
     </div>
   </body>
