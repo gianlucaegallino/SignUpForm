@@ -7,6 +7,36 @@
   font-family: Ubuntu;
   src: url(../media/fonts/Ubuntu-Regular.ttf);
 }
+
+legend,
+fieldset,
+select,
+textarea,
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  background-color:#303030;
+  border: 1.5px solid #504d4d;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+
+a:visited, a:link{
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -21,6 +51,13 @@ h2 {
   size: 2rem;
 }
 
+label{
+  font-family: Ubuntu;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
 #formcontainer #graphicscontainer {
   flex-direction: column;
 }
@@ -31,7 +68,7 @@ h2 {
 }
 
 #graphicscontainer {
-  color: white;
+  color: rgb(243, 243, 243);
   background-image: url(../media/img/archee-lal-AQuzzn6V6gE-unsplash.webp);
   background-size: auto 200vh;
   background-repeat: no-repeat;
@@ -77,20 +114,28 @@ h2 {
   padding: 4vw;
   padding-top: 12vh;
   width: 47vw;
+}
+
+.formText {
   font-weight: 600;
   font-size: 1.65vw;
-  color: rgb(238, 238, 238);
+  color: rgb(243, 243, 243);
 }
 
 #mainForm {
-  background-color: #313131;
-  color: rgb(238, 238, 238);
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
+  box-shadow: 0.4rem 0.2rem 1rem rgb(46, 44, 44);
+  background-color: #222222;
+  color: rgb(243, 243, 243);
+  padding: 1vw;
+  padding-left: 4vw;
 }
 
 #col1, #col2 {
   display: flex;
   flex-direction: column;
+}
+#fields {
+  display: flex;
+  flex-direction: row;
+  gap: 6vw;
 }
