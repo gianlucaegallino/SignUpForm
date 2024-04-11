@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <!--Stylesheet-->
     <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/scripts.js"></script>
   </head>
   <body>
     <div id="graphicscontainer">
@@ -29,7 +30,7 @@
         </p>
         <p class = "formText">You <i>know</i> you want to.</p>
       </div>
-      <form action="">
+      <form id="myform"action="">
         <div id="mainForm">
           <h2 class = "formText">Let's do this!</h2>
           <div id="fields">
@@ -37,9 +38,10 @@
               <label for="firstName">FIRST NAME</label>
               <input type="text" id="firstName" />
               <label for="email">EMAIL</label>
-              <input type="email" id="lastName"/>
+              <input type="email" id="email"/>
               <label for="password">PASSWORD</label>
               <input type="password" id="password"/>
+              <p id="errorbox"></p>
             </div>
             <div id="col2">
               <label for="lastName">LAST NAME</label>
@@ -51,7 +53,7 @@
             </div>
           </div>
         </div>
-        <button type="submit">Create Account</button>
+        <button type="button" id="submitbt">Create Account</button>
       </form>
       <p id="extraText">Already have an account? <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU">Log In</a></p>
     </div>
