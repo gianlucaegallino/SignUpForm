@@ -29,31 +29,31 @@
         </p>
         <p class = "formText">You <i>know</i> you want to.</p>
       </div>
-      <div id="mainForm">
-        <form action="">
+      <form action="">
+        <div id="mainForm">
           <h2 class = "formText">Let's do this!</h2>
           <div id="fields">
             <div id="col1">
-              <label>FIRST NAME</label>
-              <input type="text" />
-              <label>LAST NAME</label>
-              <input type="text" />
-              <label>EMAIL</label>
-              <input type="text" />
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" id="firstName" />
+              <label for="email">EMAIL</label>
+              <input type="email" id="lastName"/>
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password"/>
             </div>
             <div id="col2">
-              <label>PHONE NUMBER</label>
-              <input type="text" />
-              <label>PASSWORD</label>
-              <input type="text" />
-              <label>CONFIRM PASSWORD</label>
-              <input type="text" />
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName"/>
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input type="tel" d="phoneNumber"/>
+              <label for="CONFIRM">CONFIRM PASSWORD</label>
+              <input type="password" id="CONFIRM"/>
             </div>
           </div>
-          <button type="submit">Create Account</button>
-        </form>
-      </div>
-      <p>Already have an account? <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU">Log In</a></p>
+        </div>
+        <button type="submit">Create Account</button>
+      </form>
+      <p id="extraText">Already have an account? <a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU">Log In</a></p>
     </div>
   </body>
 </html>
